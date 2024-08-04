@@ -1,0 +1,1 @@
+export const BACKEND_URL = "https://57845aef-505b-40a3-9179-1e48526405db-00-dp6axrnklxf9.sisko.replit.dev/api/v1";
