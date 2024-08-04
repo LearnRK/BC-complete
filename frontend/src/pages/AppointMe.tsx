@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react"
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
+import { APPOINT_URL } from "../config";
 
 export const AppointMe = () => {
     const [ email, setEmail ] = useState("");
@@ -9,7 +10,7 @@ export const AppointMe = () => {
     const [ message, setMessage ] = useState("");
     const [ mailto, setMailto ] = useState("");
 
-    const emailUrl = "https://57845aef-505b-40a3-9179-1e48526405db-00-dp6axrnklxf9.sisko.replit.dev/appointme"
+    const emailUrl = APPOINT_URL;
 
     useEffect(() => {
         setMailto(`mailto:rakshitksingh@gmail.com?subject=${subject}&body=${message}`);
