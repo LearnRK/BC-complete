@@ -1,6 +1,5 @@
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
 import { Dashboard } from './pages/Dashboard'
 import { AppointMe } from './pages/AppointMe'
 import { Resume } from './pages/Resume'
