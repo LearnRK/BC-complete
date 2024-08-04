@@ -4,6 +4,7 @@ import { hexbin } from "d3-hexbin";
 import { useEffect, useMemo, useState } from "react";
 import { ScaleLinear } from "d3";
 import axios from "axios";
+import { BACKEND_URL } from "../config";
 
 const MARGIN = { top: 60, right: 60, bottom: 60, left: 60 };
 const BIN_SIZE = 25;
@@ -14,7 +15,7 @@ type HexbinProps = {
 //   data: { x: number; y: number }[];
 };
 
-const likelihoodDataUrl = "https://57845aef-505b-40a3-9179-1e48526405db-00-dp6axrnklxf9.sisko.replit.dev/api/v1/likelihood";
+const likelihoodDataUrl = `${BACKEND_URL}/likelihood`;
 
 export const Hexbin = ({ width, height }: HexbinProps) => {
 

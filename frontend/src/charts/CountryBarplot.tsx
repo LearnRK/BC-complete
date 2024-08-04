@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import * as d3 from "d3";
 import axios from "axios";
+import { BACKEND_URL } from "../config";
 
 const MARGIN = { top: 30, right: 30, bottom: 30, left: 30 };
 const BAR_PADDING = 0.2;
@@ -11,7 +12,7 @@ type BarplotProps = {
 //   data: { name: string; value: number }[];
 };
 
-const countryDataUrl = "https://57845aef-505b-40a3-9179-1e48526405db-00-dp6axrnklxf9.sisko.replit.dev/api/v1/country";
+const countryDataUrl = `${BACKEND_URL}/country`;
 
 export const CountryBarplot = ({ width, height }: BarplotProps) => {
 

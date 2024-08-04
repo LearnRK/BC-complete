@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import * as d3 from "d3";
 import axios from "axios";
+import { BACKEND_URL } from "../config";
 
 type DataItem = {
   name: string;
@@ -26,7 +27,7 @@ const colors = [
     "#e9e2b3",
 ];
 
-const sectorDataUrl = "https://57845aef-505b-40a3-9179-1e48526405db-00-dp6axrnklxf9.sisko.replit.dev/api/v1/sector";
+const sectorDataUrl = `${BACKEND_URL}/sector`;
 
 export const DonutChart = ({ width, height }: DonutChartProps) => {
 

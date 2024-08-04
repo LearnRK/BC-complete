@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as d3 from "d3";
 import axios from "axios";
+import { BACKEND_URL } from "../config";
 
-const startYearUrl = "https://57845aef-505b-40a3-9179-1e48526405db-00-dp6axrnklxf9.sisko.replit.dev/api/v1/startYear";
-const endYearUrl = "https://57845aef-505b-40a3-9179-1e48526405db-00-dp6axrnklxf9.sisko.replit.dev/api/v1/endYear";
+const startYearUrl = `${BACKEND_URL}/startYear`;
+const endYearUrl = `${BACKEND_URL}/endYear`;
 
 const MARGIN = { top: 30, right: 30, bottom: 50, left: 50 };
 

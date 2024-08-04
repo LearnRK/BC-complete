@@ -1,6 +1,7 @@
 import { useEffect, useMemo,  useState } from "react";
 import * as d3 from "d3";
 import axios from "axios";
+import { BACKEND_URL } from "../config";
 
 type DataItem = {
   name: string;
@@ -37,7 +38,7 @@ const colors = [
   "#69b3a2",
 ];
 
-const regionDataUrl = "https://57845aef-505b-40a3-9179-1e48526405db-00-dp6axrnklxf9.sisko.replit.dev/api/v1/region";
+const regionDataUrl = `${BACKEND_URL}/region`;
 
 
 export const PieChart = ({ width, height }: PieChartProps) => {
